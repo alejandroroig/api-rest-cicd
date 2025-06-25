@@ -15,7 +15,7 @@ const tableName = process.env.SAMPLE_TABLE;
 export const getByIdHandler = async (event) => {
   if (event.httpMethod !== "GET") {
     throw new Error(
-      `getMethod only accept GET method, you tried: ${event.httpMethod}`,
+      `getMethod solo acepta el método GET, tú has intentado: ${event.httpMethod}`,
     );
   }
   // All log statements are written to CloudWatch
